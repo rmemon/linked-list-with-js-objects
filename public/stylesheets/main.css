@@ -1,0 +1,56 @@
+
+.node-group {
+  margin-top: 10%;
+}
+
+.node-last {
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  position: relative;
+  margin: 25px;
+  text-align: left;
+}
+
+.node-last span{
+  position: relative;
+  top: 25%;
+  font-size: 18px;
+}
+
+.node {  
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: skyblue;
+  border: 1px solid black;    
+  position: relative;
+  margin: 25px;
+      
+}
+
+.node span {
+position: relative;
+top: 30%;
+left: 10%
+}
+
+.node:before {
+     content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid black;
+  transform: translate(-50%);
+}
+
+.node:after {
+  font-family: "FontAwesome";
+  content: "\f061";    
+  transform: translate(168%);
+  position: absolute;
+  font-size: 30px;
+  color: gray;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Simple Object Demo</h2>
+
+    <form action=""  onsubmit="return addNode(this)">
+      <div class="form-group col-md-6">
+        <input type="text" maxlength="2" class="form-control" id="node" placeholder="Enter Node" name="node">
+      </div>
+
+      <div class="col-md-6">
+      <button type="submit" class="btn btn-default">Submit</button>
+  </div>
+    </form>
+
+  <div class="node-group col-md-12">          
+  </div>
+</div>
+  
+
+</body>
+</html>
